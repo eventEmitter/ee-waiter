@@ -12,7 +12,7 @@
 
 
 		, init: function( callback ){
-			this.__callback = callback;
+			if ( callback ) this.__callback = callback;
 		}
 
 
@@ -22,10 +22,13 @@
 		}
 
 
-		, __complete: function(){
-			this.__finishedCount++;
-			if ( this.__finishedCount === this.__jobs.length ){
-				if ( this.__callback ) this.__callback();
+		, __complete: function( err ){
+			if ( err ) this.cancel( err );
+			else {
+				this.__finishedCount++;
+				if ( this.__finishedCount === this.__jobs.length ){
+					if ( this.__callback ) this.__callback();
+				}
 			}
 		}
 
@@ -40,7 +43,7 @@
 		, start: function( callback ){
 			var i = this.__jobs.length;
 
-			this.__callback = callback;
+			if ( callback ) this.__callback = callback;
 
 			if ( i > 0 ){
 				while( i-- ){
@@ -52,5 +55,3 @@
 			}
 		}
 	} );
-
-	
