@@ -1,7 +1,7 @@
 {
       "name":           "ee-waiter"
     , "description":    "control flow: parallel asynchronous job execution"
-    , "version":        "0.1.0"
+    , "version":        "0.1.1"
     , "homepage":       "https://github.com/eventEmitter/ee-waiter"
     , "author":         "Michael van der Weg <michael@eventemitter.com> (http://eventemitter.com/)" 
     , "repository": {
@@ -14,7 +14,7 @@
         "url":          "https://github.com/eventEmitter/ee-waiter/issues"
     }
     , "dependencies": {
-        "ee-class": "*"
+        "ee-class": "0.4.*"
     }
     , "devDependencies": {}
     , "optionalDependencies": {}
