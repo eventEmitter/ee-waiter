@@ -1,5 +1,7 @@
 # parallel control flow library
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/eventEmitter/ee-waiter.svg)](https://greenkeeper.io/)
+
 
 	var Waiter = require( "ee-waiter" );
 
