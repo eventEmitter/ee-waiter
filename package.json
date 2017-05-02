@@ -14,7 +14,7 @@
         "url":          "https://github.com/eventEmitter/ee-waiter/issues"
     }
     , "dependencies": {
-        "ee-class": "0.4.*"
+        "ee-class": "~1.4.0"
     }
     , "devDependencies": {}
     , "optionalDependencies": {}
